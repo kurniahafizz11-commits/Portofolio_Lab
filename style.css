@@ -426,6 +426,10 @@ p{
         padding: 5px 8px;
     }
 
+    .item-kemampuan h3{
+        color:#ffffff;
+    }
+
     .project-container {
         margin: 60px auto 20px auto;
         padding: 40px 0 20px 0;
@@ -437,6 +441,10 @@ p{
 
     .item-project {
         width: 100%;               
+    }
+
+    .item-project h3{
+        color:#ffffff;
     }
 
     .footer-kontak-utama {

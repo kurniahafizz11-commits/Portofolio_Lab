@@ -34,7 +34,7 @@ header{
     background-color: rgba(11, 20, 41, 0.75); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(4, 9, 37, 0.162);
+    border-bottom: 1x solid rgba(4, 9, 37, 0.162);
     transition: all 0.3s ease; 
 }
 .logo{
@@ -230,7 +230,7 @@ p{
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 24px; 
-    padding: 35px 25px;
+    padding: 0 0 30px 0;
     display: flex;
     flex-direction: column; 
     align-items: center;    
@@ -238,6 +238,12 @@ p{
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     transition: all 0.3s ease;
+    overflow: hidden; 
+}
+
+.item-project h3, .item-project p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .item-project p{
@@ -253,6 +259,22 @@ p{
     -webkit-background-clip: text;
     background-clip: text;   
     -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+}
+
+.project-images {
+    width: 100%;
+    height: 180px;        
+    overflow: hidden;     
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-img {
+    display: block;      
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    transition: transform 0.5s ease; 
 }
 
 .btn-view {
@@ -328,6 +350,9 @@ p{
 
 .btn-instagram { border: 1px solid rgba(225, 48, 108, 0.4); background-color: rgba(225, 48, 108, 0.05); }
 .btn-instagram:hover { background-color: #e1306c; box-shadow: 0 0 20px rgba(225, 48, 108, 0.5); transform: translateY(-4px); }
+
+.btn-github { border: 1px solid rgba(37, 240, 111, 0.4); background-color: rgba(225, 48, 108, 0.05); }
+.btn-github:hover { background-color: #3acb91; box-shadow: 0 0 20px rgba(24, 238, 56, 0.5); transform: translateY(-4px); }
 
 .footer-copyright {
     width: 100vw;
@@ -427,7 +452,7 @@ p{
     }
 
     .item-kemampuan h3{
-        color:#ffffff;
+        color:#ffffff
     }
 
     .project-container {
@@ -443,10 +468,14 @@ p{
         width: 100%;               
     }
 
-    .item-project h3{
-        color:#ffffff;
+    .project-images {
+        height: 150px;       
+        width: 100%;        
     }
 
+    .item-project h3{
+        color: #ffffff;
+    }
     .footer-kontak-utama {
         margin-top: 80px;
     }
